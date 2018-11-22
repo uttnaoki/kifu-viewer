@@ -1,6 +1,6 @@
 const appendKifuURLs = (uid) => {
   let url = `https://shogiwars.heroz.jp/users/history/${uid}`;
-  url = `http://cors-allow.azurewebsites.net/?url=${url}`;  // corsの問題を回避
+  url = `https://cors-allow.azurewebsites.net/?url=${url}`;  // corsの問題を回避
 
   $.ajax({
     url: url,
